@@ -12,3 +12,7 @@ lst = client.service.ListOfCountryNamesByCode()
 for item in lst:
     if item['sName'] == 'India':
         print(item['sISOCode'])
+
+print("******************")
+client2 = Client("http://dneonline.com/calculator.asmx?wsdl")
+print(client2.service.Multiply(10,32))
